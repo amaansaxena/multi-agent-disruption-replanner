@@ -1,0 +1,5 @@
+pandas
+pulp==2.9.0
+streamlit>=1.50
+langgraph
+# langchain-ollama   (only if you use Ollama for parsing or drafting)

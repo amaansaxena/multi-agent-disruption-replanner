@@ -1,0 +1,21 @@
+id,category,name,expected,got,match,retries,critic_fails,optimizer_total,baseline_total,optimizer_late,baseline_late,do_nothing_penalty
+S01,normal,"Small delay, one order at risk",released,released,True,0,0,8995.59,12218.4,0,0,600
+S02,normal,Medium delay on the wiring harness,released,released,True,0,0,9363.24,11018.52,0,0,18350
+S03,normal,Long delay on the wiring harness,released,released,True,0,0,9363.24,10609.47,0,0,52100
+S04,normal,"Steel frame, many orders at risk",released,released,True,0,0,27147.15,35173.7,0,0,70150
+S05,normal,"Cheap part, bolt set",released,released,True,0,0,1916.23,2183.63,0,0,34800
+S06,normal,"Motor housing, short delay",released,released,True,0,0,20850.77,27699.08,0,0,1700
+S07,normal,"Gear assembly, large shortfall",released,released,True,0,0,28107.22,30966.52,0,0,115350
+S08,normal,"Control board, most expensive part",released,released,True,0,0,63347.91,66645.26,3,2,72400
+S09,normal,"Plastic casing, very long delay",released,released,True,0,0,30646.8,149833.31,7,8,178150
+S10,normal,"Sensor module, none in stock, 60-day delay",released,released,True,0,0,60057.44,290956.48,6,10,374250
+S11,no_shortfall,Delay too short to matter,no_shortfall,no_shortfall,True,0,0,,,,,
+S12,no_impact,Alert about a backup supplier,no_impact,no_impact,True,0,0,,,,,
+S13,bad_alert,Unknown supplier,bad_alert,bad_alert,True,0,0,,,,,
+S14,bad_alert,Unknown part,bad_alert,bad_alert,True,0,0,,,,,
+S15,bad_alert,Delay longer than 60 days,bad_alert,bad_alert,True,0,0,,,,,
+S16,bad_alert,"Alert with no supplier, part or delay in it",bad_alert,bad_alert,True,0,0,,,,,
+S17,second_alert,Second delay on a different part,released,released,True,0,0,36142.74,47283.02,0,0,80950
+S18,second_alert,Two big delays hitting the same orders,released,released,True,0,0,85748.68,93942.4,5,2,96250
+S19,fault,Solver reports a wrong total on its first try,released,released,True,0,0,1916.23,2183.63,0,0,34800
+S20,fault,Messages always quote a wrong quantity,released,released,True,0,0,28107.22,30966.52,0,0,115350

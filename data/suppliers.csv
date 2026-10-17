@@ -1,0 +1,19 @@
+supplier_id,supplier_name,part_id,is_primary,unit_price,lead_days,capacity
+S1,Apex Metals,P1,True,61.74,4,1000
+S2,Brightline Electronics,P1,False,53.18,5,323
+S3,Cobalt Fasteners,P2,True,39.01,3,1000
+S4,Delta Plastics,P2,False,35.27,7,279
+S4,Delta Plastics,P3,True,57.58,8,1000
+S3,Cobalt Fasteners,P3,False,66.62,10,206
+S2,Brightline Electronics,P4,True,25.14,3,1000
+S4,Delta Plastics,P4,False,24.81,6,328
+S3,Cobalt Fasteners,P4,False,22.59,8,189
+S1,Apex Metals,P5,True,5.58,6,1000
+S3,Cobalt Fasteners,P5,False,5.57,9,304
+S3,Cobalt Fasteners,P6,True,32.89,6,1000
+S1,Apex Metals,P6,False,28.63,8,362
+S2,Brightline Electronics,P6,False,33.75,9,297
+S4,Delta Plastics,P7,True,12.89,8,1000
+S3,Cobalt Fasteners,P7,False,13.56,8,170
+S2,Brightline Electronics,P8,True,27.38,6,1000
+S1,Apex Metals,P8,False,29.45,9,191

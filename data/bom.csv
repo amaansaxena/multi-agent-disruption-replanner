@@ -1,0 +1,17 @@
+product_id,part_id,qty_per_unit
+PR1,P6,3
+PR1,P3,3
+PR1,P2,1
+PR1,P7,3
+PR1,P1,3
+PR2,P4,3
+PR2,P2,3
+PR2,P8,3
+PR2,P6,1
+PR2,P3,3
+PR3,P6,2
+PR3,P7,2
+PR3,P1,2
+PR3,P2,1
+PR3,P8,1
+PR3,P5,3

@@ -1,0 +1,188 @@
+[
+  {
+    "id": "S01",
+    "name": "Small delay, one order at risk",
+    "category": "normal",
+    "alerts": [
+      "S2 delays P4 by 10 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S02",
+    "name": "Medium delay on the wiring harness",
+    "category": "normal",
+    "alerts": [
+      "S2 delays P4 by 25 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S03",
+    "name": "Long delay on the wiring harness",
+    "category": "normal",
+    "alerts": [
+      "S2 delays P4 by 40 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S04",
+    "name": "Steel frame, many orders at risk",
+    "category": "normal",
+    "alerts": [
+      "S1 delays P1 by 35 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S05",
+    "name": "Cheap part, bolt set",
+    "category": "normal",
+    "alerts": [
+      "S1 delays P5 by 25 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S06",
+    "name": "Motor housing, short delay",
+    "category": "normal",
+    "alerts": [
+      "S3 delays P2 by 12 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S07",
+    "name": "Gear assembly, large shortfall",
+    "category": "normal",
+    "alerts": [
+      "S3 delays P6 by 30 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S08",
+    "name": "Control board, most expensive part",
+    "category": "normal",
+    "alerts": [
+      "S4 delays P3 by 30 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S09",
+    "name": "Plastic casing, very long delay",
+    "category": "normal",
+    "alerts": [
+      "S4 delays P7 by 45 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S10",
+    "name": "Sensor module, none in stock, 60-day delay",
+    "category": "normal",
+    "alerts": [
+      "S2 delays P8 by 60 days"
+    ],
+    "expect": "released"
+  },
+  {
+    "id": "S11",
+    "name": "Delay too short to matter",
+    "category": "no_shortfall",
+    "alerts": [
+      "S2 delays P4 by 1 days"
+    ],
+    "expect": "no_shortfall"
+  },
+  {
+    "id": "S12",
+    "name": "Alert about a backup supplier",
+    "category": "no_impact",
+    "alerts": [
+      "S2 delays P1 by 10 days"
+    ],
+    "expect": "no_impact"
+  },
+  {
+    "id": "S13",
+    "name": "Unknown supplier",
+    "category": "bad_alert",
+    "alerts": [
+      "S9 delays P4 by 5 days"
+    ],
+    "expect": "bad_alert"
+  },
+  {
+    "id": "S14",
+    "name": "Unknown part",
+    "category": "bad_alert",
+    "alerts": [
+      "S2 delays P99 by 5 days"
+    ],
+    "expect": "bad_alert"
+  },
+  {
+    "id": "S15",
+    "name": "Delay longer than 60 days",
+    "category": "bad_alert",
+    "alerts": [
+      "S2 delays P4 by 75 days"
+    ],
+    "expect": "bad_alert"
+  },
+  {
+    "id": "S16",
+    "name": "Alert with no supplier, part or delay in it",
+    "category": "bad_alert",
+    "alerts": [
+      "Our supplier says the shipment is running late"
+    ],
+    "expect": "bad_alert"
+  },
+  {
+    "id": "S17",
+    "name": "Second delay on a different part",
+    "category": "second_alert",
+    "alerts": [
+      "S2 delays P4 by 20 days"
+    ],
+    "expect": "released",
+    "late_alert": "S1 delays P1 by 35 days"
+  },
+  {
+    "id": "S18",
+    "name": "Two big delays hitting the same orders",
+    "category": "second_alert",
+    "alerts": [
+      "S3 delays P2 by 25 days"
+    ],
+    "expect": "released",
+    "late_alert": "S4 delays P3 by 30 days"
+  },
+  {
+    "id": "S19",
+    "name": "Solver reports a wrong total on its first try",
+    "category": "fault",
+    "alerts": [
+      "S1 delays P5 by 25 days"
+    ],
+    "expect": "released",
+    "fault": "wrong_total_once",
+    "expect_faulted": "released"
+  },
+  {
+    "id": "S20",
+    "name": "Messages always quote a wrong quantity",
+    "category": "fault",
+    "alerts": [
+      "S3 delays P6 by 30 days"
+    ],
+    "expect": "released",
+    "fault": "wrong_message_always",
+    "expect_faulted": "escalated"
+  }
+]
